@@ -1,1 +1,60 @@
-a
+Zbigniew Bielecki
+s085120@student.tu.kielce.pl
+gr. 11ID21A
+
+//===================================================================
+
+Temat projektu 36:
+Graficzne programowanie
+
+//===================================================================
+
+Spis technologii:
+- Silnik Godot
+- Język C#
+- Język GDScript
+
+//===================================================================
+
+Harmonogram pracy:
+
+- Etap 2: 
+  Wybranie schematu, który będzie używany przez użytkownika.
+  Wykonanie podstaw intefejsu pluginu.
+
+- Etap 3:
+  Dalsze prace nad intefejsem.
+
+- Etap 4:
+  Zakończenie prac nad intefejsem.
+  Zapisywanie danych z intefejsu w postaci JSON
+
+- Etap 5:
+  Rozpoczęcie prac nad generowaniem kodu źródłowego dla języka C#.
+
+- Etap 6:
+  Rozpoczęcie prac nad generowaniem kodu źródłowego dla języka GDScript.
+
+- Etap 7:
+  Poprawki nad generatorami.
+  Testowanie.
+
+- Etap 8:
+  Przygotowanie dokumentacji i ewentualne poprawki projektu
+
+//===================================================================
+
+Lista funkcjonalności:
+- możliwość tworzenia klas, zmiennych, metod w postaci graficznej na planszy
+- możliwość ustawiania ich i łączenia ze sobą
+- możliwość wykonywania dziedziczenia w postaci graficznej
+- zapis projektu w postaci pliku JSON
+- generowanie kodu źródłowego dla języka C#
+- generowanie kodu źródłowego dla języka GDScript
+
+//===================================================================
+
+Tematy innych projektów:
+- Programowanie systemów rozproszonych: "Komparator (plików)"
+- pracy inżynierskiej: "Projekt i opracowanie gry platformowej 3D na system
+  operacyjny Linux i Android"
