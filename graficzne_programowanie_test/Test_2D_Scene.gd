@@ -1,5 +1,4 @@
-tool
-extends Button
+extends Node2D
 
 
 # Declare member variables here. Examples:
@@ -15,7 +14,3 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
-
-
-func _on_Button_pressed():
-	print("Test button working!")
