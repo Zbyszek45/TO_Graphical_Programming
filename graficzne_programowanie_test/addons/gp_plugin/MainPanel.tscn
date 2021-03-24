@@ -30,17 +30,17 @@ custom_constants/separation = 0
 margin_right = 1016.0
 margin_bottom = 20.0
 
-[node name="MenuButton" type="MenuButton" parent="MarginContainer/VBoxContainer/HBoxContainer"]
-margin_right = 82.0
+[node name="File" type="MenuButton" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+margin_right = 35.0
 margin_bottom = 20.0
-text = "TestButton"
-items = [ "Test Option", null, 0, false, false, 0, 0, null, "", false ]
+text = "File"
+items = [ "Load project", null, 0, false, false, 0, 0, null, "", false, "Save project", null, 0, false, false, 1, 0, null, "", false ]
 
-[node name="MenuButton2" type="MenuButton" parent="MarginContainer/VBoxContainer/HBoxContainer"]
-margin_left = 86.0
-margin_right = 176.0
+[node name="Options" type="MenuButton" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+margin_left = 39.0
+margin_right = 102.0
 margin_bottom = 20.0
-text = "TestButton2"
+text = "Options"
 
 [node name="HSplitContainer" type="HSplitContainer" parent="MarginContainer/VBoxContainer"]
 margin_top = 20.0
@@ -52,15 +52,13 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="TextEdit" type="TextEdit" parent="MarginContainer/VBoxContainer/HSplitContainer"]
-margin_right = 502.0
+[node name="ItemList" type="ItemList" parent="MarginContainer/VBoxContainer/HSplitContainer"]
+margin_right = 200.0
 margin_bottom = 572.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
+rect_min_size = Vector2( 200, 0 )
+items = [ "Class", null, false, "Method", null, false, "Variable", null, false ]
 
-[node name="TextEdit2" type="TextEdit" parent="MarginContainer/VBoxContainer/HSplitContainer"]
-margin_left = 514.0
+[node name="Graph" type="GraphEdit" parent="MarginContainer/VBoxContainer/HSplitContainer"]
+margin_left = 212.0
 margin_right = 1016.0
 margin_bottom = 572.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
