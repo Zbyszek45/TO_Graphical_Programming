@@ -16,5 +16,10 @@ func can_drop_data(position, data):
 
 func drop_data(position, data):
 	print("Dropped: ", data, position)
+	var new_node = GraphNode.new();
+	self.add_child(new_node)
+	new_node.title = data
+	new_node.offset = position
+	new_node.rect_min_size = Vector2(0, 80)
 
 

@@ -20,4 +20,5 @@ func get_drag_data(position):
 	var tmp = TextureRect.new();
 	tmp.texture = load("res://icon.png")
 	set_drag_preview(tmp)
-	return "Something"
+	var s = get_selected_items()
+	return self.get_item_text(s[0])
