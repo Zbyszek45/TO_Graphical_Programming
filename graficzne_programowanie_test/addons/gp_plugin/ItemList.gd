@@ -1,3 +1,4 @@
+tool
 extends ItemList
 
 
@@ -14,3 +15,9 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
+
+func get_drag_data(position):
+	var tmp = TextureRect.new();
+	tmp.texture = load("res://icon.png")
+	set_drag_preview(tmp)
+	return "Something"
