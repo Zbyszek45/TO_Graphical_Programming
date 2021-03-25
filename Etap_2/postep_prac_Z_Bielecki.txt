@@ -1,0 +1,59 @@
+CO ZOSTAŁO ZREALIZOWANE:
+- szkielet gui
+- określenie schematu
+
+//================================================================
+
+CO BĘDZIE REALIZOWANE:
+- dalsza praca nad gui
+
+//================================================================
+
+JAKIE SĄ EWENTUALNE PROBLEMY:
+Brak.
+
+//================================================================
+
+STATYSTYKI KODU ŹRÓDŁOWEGO:
+
+Date:   Wed Mar 24 20:45:29 2021 +0200
+    Tworzenie GraphNode
+
+ graficzne_programowanie_test/.mono/metadata/ide_messaging_meta.txt | 2 --
+ graficzne_programowanie_test/addons/gp_plugin/Graph.gd             | 5 +++++
+ graficzne_programowanie_test/addons/gp_plugin/ItemList.gd          | 3 ++-
+ 3 files changed, 7 insertions(+), 3 deletions(-)
+
+
+Date:   Wed Mar 24 20:14:51 2021 +0200
+    Podstawowe drag&drop
+
+ .../addons/gp_plugin/Graph.gd                        | 20 ++++++++++++++++++++
+ .../addons/gp_plugin/ItemList.gd                     |  7 +++++++
+ .../addons/gp_plugin/MainPanel.tscn                  |  7 ++++++-
+ 3 files changed, 33 insertions(+), 1 deletion(-)
+
+
+Date:   Wed Mar 24 19:52:22 2021 +0200
+    Tworzenie gitignore
+
+ .gitignore                                                         | 2 ++
+ graficzne_programowanie_test/.mono/metadata/ide_messaging_meta.txt | 2 +-
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+
+
+Date:   Wed Mar 24 19:50:33 2021 +0200
+    Nowy template dla elemntów listy
+
+ .../addons/gp_plugin/ItemList.gd                   | 16 ++++++++++++
+ .../addons/gp_plugin/MainPanel.tscn                | 30 ++++++++++------------
+ 2 files changed, 30 insertions(+), 16 deletions(-)
+
+
+Date:   Mon Mar 22 20:11:01 2021 +0200
+    Stworzenie układu GUI
+
+ .../.mono/metadata/ide_messaging_meta.txt          |  2 +
+ .../gp_plugin/Button.gd => Test_2D_Scene.gd}       |  7 +--
+ .../addons/gp_plugin/MainPanel.tscn                | 66 ++++++++++++++++++----
+ 3 files changed, 57 insertions(+), 18 deletions(-)
