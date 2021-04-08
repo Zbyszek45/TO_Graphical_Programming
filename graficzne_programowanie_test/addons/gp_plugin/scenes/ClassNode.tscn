@@ -1,0 +1,181 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://addons/gp_plugin/scenes/ClassNode.gd" type="Script" id=1]
+[ext_resource path="res://addons/gp_plugin/assets/class_node_header_selected.tres" type="StyleBox" id=2]
+[ext_resource path="res://addons/gp_plugin/assets/class_node_header.tres" type="StyleBox" id=3]
+
+[node name="ClassNode" type="GraphNode"]
+margin_right = 162.0
+margin_bottom = 59.0
+custom_styles/frame = ExtResource( 3 )
+custom_styles/selectedframe = ExtResource( 2 )
+custom_constants/port_offset = 0
+title = "ClassName"
+show_close = true
+slot/0/left_enabled = true
+slot/0/left_type = 0
+slot/0/left_color = Color( 0, 0, 1, 1 )
+slot/0/right_enabled = true
+slot/0/right_type = 0
+slot/0/right_color = Color( 0, 0, 1, 1 )
+slot/1/left_enabled = false
+slot/1/left_type = 0
+slot/1/left_color = Color( 1, 1, 1, 1 )
+slot/1/right_enabled = false
+slot/1/right_type = 0
+slot/1/right_color = Color( 1, 1, 1, 1 )
+slot/2/left_enabled = true
+slot/2/left_type = 1
+slot/2/left_color = Color( 1, 0, 0, 1 )
+slot/2/right_enabled = true
+slot/2/right_type = 1
+slot/2/right_color = Color( 1, 0, 0, 1 )
+slot/3/left_enabled = false
+slot/3/left_type = 0
+slot/3/left_color = Color( 1, 1, 1, 1 )
+slot/3/right_enabled = false
+slot/3/right_type = 0
+slot/3/right_color = Color( 1, 1, 1, 1 )
+slot/4/left_enabled = false
+slot/4/left_type = 0
+slot/4/left_color = Color( 1, 1, 1, 1 )
+slot/4/right_enabled = false
+slot/4/right_type = 0
+slot/4/right_color = Color( 1, 1, 1, 1 )
+slot/5/left_enabled = false
+slot/5/left_type = 0
+slot/5/left_color = Color( 1, 1, 1, 1 )
+slot/5/right_enabled = false
+slot/5/right_type = 0
+slot/5/right_color = Color( 1, 1, 1, 1 )
+slot/6/left_enabled = false
+slot/6/left_type = 0
+slot/6/left_color = Color( 1, 1, 1, 1 )
+slot/6/right_enabled = false
+slot/6/right_type = 0
+slot/6/right_color = Color( 1, 1, 1, 1 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Inheritance" type="HBoxContainer" parent="."]
+modulate = Color( 0.643137, 0.682353, 1, 1 )
+margin_left = 26.0
+margin_top = 35.0
+margin_right = 194.0
+margin_bottom = 49.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Inheritance"]
+margin_right = 78.0
+margin_bottom = 14.0
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="Inheritance/HBoxContainer"]
+margin_right = 78.0
+margin_bottom = 14.0
+size_flags_horizontal = 3
+text = "Inherit from"
+
+[node name="VSeparator" type="VSeparator" parent="Inheritance"]
+margin_left = 82.0
+margin_right = 86.0
+margin_bottom = 14.0
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Inheritance"]
+margin_left = 90.0
+margin_right = 168.0
+margin_bottom = 14.0
+size_flags_horizontal = 11
+alignment = 2
+
+[node name="Label2" type="Label" parent="Inheritance/HBoxContainer2"]
+margin_right = 78.0
+margin_bottom = 14.0
+size_flags_horizontal = 3
+text = "Inherit to"
+align = 2
+
+[node name="HSeparator" type="HSeparator" parent="."]
+margin_left = 26.0
+margin_top = 50.0
+margin_right = 194.0
+margin_bottom = 53.0
+custom_constants/separation = 3
+
+[node name="Scene" type="HBoxContainer" parent="."]
+modulate = Color( 1, 0.74902, 0.74902, 1 )
+margin_left = 26.0
+margin_top = 54.0
+margin_right = 194.0
+margin_bottom = 68.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Scene"]
+margin_right = 83.0
+margin_bottom = 14.0
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="Scene/HBoxContainer"]
+margin_right = 83.0
+margin_bottom = 14.0
+text = "Scene parent"
+
+[node name="VSeparator" type="VSeparator" parent="Scene"]
+margin_left = 87.0
+margin_right = 91.0
+margin_bottom = 14.0
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Scene"]
+margin_left = 95.0
+margin_right = 168.0
+margin_bottom = 14.0
+size_flags_horizontal = 11
+
+[node name="Label" type="Label" parent="Scene/HBoxContainer2"]
+margin_right = 73.0
+margin_bottom = 14.0
+text = "Scene child"
+align = 2
+
+[node name="HSeparator2" type="HSeparator" parent="."]
+margin_left = 26.0
+margin_top = 69.0
+margin_right = 194.0
+margin_bottom = 73.0
+
+[node name="Methods" type="VBoxContainer" parent="."]
+modulate = Color( 0.937255, 1, 0.635294, 1 )
+margin_left = 26.0
+margin_top = 74.0
+margin_right = 194.0
+margin_bottom = 88.0
+
+[node name="Label" type="Label" parent="Methods"]
+margin_right = 168.0
+margin_bottom = 14.0
+text = "Methods:"
+align = 1
+
+[node name="HSeparator3" type="HSeparator" parent="."]
+margin_left = 26.0
+margin_top = 89.0
+margin_right = 194.0
+margin_bottom = 93.0
+
+[node name="Fields" type="VBoxContainer" parent="."]
+modulate = Color( 0.713726, 1, 0.847059, 1 )
+margin_left = 26.0
+margin_top = 94.0
+margin_right = 194.0
+margin_bottom = 108.0
+
+[node name="Label" type="Label" parent="Fields"]
+margin_right = 168.0
+margin_bottom = 14.0
+text = "Fields:"
+align = 1
+[connection signal="close_request" from="." to="." method="_on_ClassNode_close_request"]
+[connection signal="gui_input" from="." to="." method="_on_ClassNode_gui_input"]

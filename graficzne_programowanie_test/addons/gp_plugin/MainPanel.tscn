@@ -1,12 +1,17 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://addons/gp_plugin/ItemList.gd" type="Script" id=1]
 [ext_resource path="res://addons/gp_plugin/Graph.gd" type="Script" id=2]
+[ext_resource path="res://addons/gp_plugin/MainPanel.gd" type="Script" id=3]
+[ext_resource path="res://addons/gp_plugin/ClassSettings.gd" type="Script" id=4]
+[ext_resource path="res://addons/gp_plugin/assets/main_node_header.tres" type="StyleBox" id=5]
+[ext_resource path="res://addons/gp_plugin/scenes/ClassNode.tscn" type="PackedScene" id=6]
 
 [node name="MainPanel" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 size_flags_vertical = 3
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -56,14 +61,111 @@ __meta__ = {
 }
 
 [node name="ItemList" type="ItemList" parent="MarginContainer/VBoxContainer/HSplitContainer"]
-margin_right = 200.0
+margin_right = 100.0
 margin_bottom = 572.0
-rect_min_size = Vector2( 200, 0 )
-items = [ "Class", null, false, "Method", null, false, "Variable", null, false ]
+rect_min_size = Vector2( 100, 0 )
+items = [ "Class", null, false ]
 script = ExtResource( 1 )
 
 [node name="Graph" type="GraphEdit" parent="MarginContainer/VBoxContainer/HSplitContainer"]
-margin_left = 212.0
+margin_left = 112.0
 margin_right = 1016.0
 margin_bottom = 572.0
+right_disconnects = true
 script = ExtResource( 2 )
+
+[node name="MainNode" parent="MarginContainer/VBoxContainer/HSplitContainer/Graph" instance=ExtResource( 6 )]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -389.004
+margin_top = -50.3948
+margin_right = -169.004
+margin_bottom = 62.6052
+mouse_filter = 1
+custom_styles/frame = ExtResource( 5 )
+custom_styles/selectedframe = ExtResource( 5 )
+show_close = false
+
+[node name="ClassSettings" type="WindowDialog" parent="."]
+margin_right = 48.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 300, 300 )
+window_title = "Class Settings"
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MarginC" type="MarginContainer" parent="ClassSettings"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_right = 10
+custom_constants/margin_top = 10
+custom_constants/margin_left = 10
+custom_constants/margin_bottom = 10
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TabContainer" type="TabContainer" parent="ClassSettings/MarginC"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 290.0
+margin_bottom = 290.0
+tab_align = 0
+
+[node name="Basic" type="VBoxContainer" parent="ClassSettings/MarginC/TabContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ClassName" type="HBoxContainer" parent="ClassSettings/MarginC/TabContainer/Basic"]
+margin_right = 272.0
+margin_bottom = 24.0
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="ClassSettings/MarginC/TabContainer/Basic/ClassName"]
+margin_top = 5.0
+margin_right = 134.0
+margin_bottom = 19.0
+size_flags_horizontal = 3
+text = "Class name:"
+
+[node name="LineEdit" type="LineEdit" parent="ClassSettings/MarginC/TabContainer/Basic/ClassName"]
+margin_left = 138.0
+margin_right = 272.0
+margin_bottom = 24.0
+size_flags_horizontal = 3
+
+[node name="Methods" type="VBoxContainer" parent="ClassSettings/MarginC/TabContainer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Fields" type="VBoxContainer" parent="ClassSettings/MarginC/TabContainer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+[connection signal="connection_request" from="MarginContainer/VBoxContainer/HSplitContainer/Graph" to="MarginContainer/VBoxContainer/HSplitContainer/Graph" method="_on_Graph_connection_request"]
+[connection signal="disconnection_request" from="MarginContainer/VBoxContainer/HSplitContainer/Graph" to="MarginContainer/VBoxContainer/HSplitContainer/Graph" method="_on_Graph_disconnection_request"]
+[connection signal="node_changed" from="MarginContainer/VBoxContainer/HSplitContainer/Graph" to="." method="_on_Graph_node_changed"]
+[connection signal="about_to_show" from="ClassSettings" to="ClassSettings" method="_on_ClassSettings_about_to_show"]
+[connection signal="popup_hide" from="ClassSettings" to="ClassSettings" method="_on_ClassSettings_popup_hide"]
+[connection signal="focus_exited" from="ClassSettings/MarginC/TabContainer/Basic/ClassName/Label" to="ClassSettings" method="_on_Label_focus_exited"]
+[connection signal="text_changed" from="ClassSettings/MarginC/TabContainer/Basic/ClassName/LineEdit" to="ClassSettings" method="_on_LineEdit_text_changed"]
