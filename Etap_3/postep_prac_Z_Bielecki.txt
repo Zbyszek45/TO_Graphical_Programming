@@ -1,0 +1,35 @@
+CO ZOSTAŁO ZREALIZOWANE:
+- Stworzono węzeł do tworzenia i łączenia klas
+- Określono jego podstawową budowe
+- Stworzono okienko do zmiany właściwości klasy
+
+//================================================================
+
+CO BĘDZIE REALIZOWANE:
+- Dodanie możliwości wybrania miejsca zapisu w projekcie
+- Dalsza praca nad funkcjonalnością okienka
+
+//================================================================
+
+JAKIE SĄ EWENTUALNE PROBLEMY:
+Brak.
+
+//================================================================
+
+STATYSTYKI KODU ŹRÓDŁOWEGO:
+
+Author: Zbigniew Bielecki <80918390+Zbyszek45@users.noreply.github.com>
+Date:   Thu Apr 8 17:23:30 2021 +0200
+
+    Basics connections
+
+ .../addons/gp_plugin/ClassSettings.gd              |  34 ++++
+ .../addons/gp_plugin/Graph.gd                      |  19 ++-
+ .../addons/gp_plugin/MainPanel.gd                  |  24 +++
+ .../addons/gp_plugin/MainPanel.tscn                | 112 ++++++++++++-
+ .../addons/gp_plugin/assets/class_node_header.tres |  14 ++
+ .../assets/class_node_header_selected.tres         |  14 ++
+ .../addons/gp_plugin/assets/main_node_header.tres  |  14 ++
+ .../addons/gp_plugin/scenes/ClassNode.gd           |  29 ++++
+ .../addons/gp_plugin/scenes/ClassNode.tscn         | 181 +++++++++++++++++++++
+ 9 files changed, 433 insertions(+), 8 deletions(-)
