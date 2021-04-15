@@ -18,6 +18,10 @@ _global_script_class_icons={
 config/name="Graficzne Programowanie Test"
 config/icon="res://icon.png"
 
+[autoload]
+
+Singleton="*res://addons/gp_plugin/my_singleton.gd"
+
 [editor_plugins]
 
 enabled=PoolStringArray( "gp_plugin" )

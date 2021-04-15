@@ -5,13 +5,15 @@
 [ext_resource path="res://addons/gp_plugin/assets/class_node_header.tres" type="StyleBox" id=3]
 
 [node name="ClassNode" type="GraphNode"]
-margin_right = 162.0
-margin_bottom = 59.0
+margin_right = 201.0
+margin_bottom = 93.0
+size_flags_vertical = 5
 custom_styles/frame = ExtResource( 3 )
 custom_styles/selectedframe = ExtResource( 2 )
 custom_constants/port_offset = 0
 title = "ClassName"
 show_close = true
+resizable = true
 slot/0/left_enabled = true
 slot/0/left_type = 0
 slot/0/left_color = Color( 0, 0, 1, 1 )
@@ -24,10 +26,10 @@ slot/1/left_color = Color( 1, 1, 1, 1 )
 slot/1/right_enabled = false
 slot/1/right_type = 0
 slot/1/right_color = Color( 1, 1, 1, 1 )
-slot/2/left_enabled = true
+slot/2/left_enabled = false
 slot/2/left_type = 1
 slot/2/left_color = Color( 1, 0, 0, 1 )
-slot/2/right_enabled = true
+slot/2/right_enabled = false
 slot/2/right_type = 1
 slot/2/right_color = Color( 1, 0, 0, 1 )
 slot/3/left_enabled = false
@@ -54,6 +56,12 @@ slot/6/left_color = Color( 1, 1, 1, 1 )
 slot/6/right_enabled = false
 slot/6/right_type = 0
 slot/6/right_color = Color( 1, 1, 1, 1 )
+slot/7/left_enabled = false
+slot/7/left_type = 0
+slot/7/left_color = Color( 1, 1, 1, 1 )
+slot/7/right_enabled = false
+slot/7/right_type = 0
+slot/7/right_color = Color( 1, 1, 1, 1 )
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -63,119 +71,136 @@ __meta__ = {
 modulate = Color( 0.643137, 0.682353, 1, 1 )
 margin_left = 26.0
 margin_top = 35.0
-margin_right = 194.0
+margin_right = 426.0
 margin_bottom = 49.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 alignment = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Inheritance"]
-margin_right = 78.0
+margin_right = 194.0
 margin_bottom = 14.0
 size_flags_horizontal = 3
 
 [node name="Label" type="Label" parent="Inheritance/HBoxContainer"]
-margin_right = 78.0
+margin_right = 194.0
 margin_bottom = 14.0
 size_flags_horizontal = 3
 text = "Inherit from"
 
 [node name="VSeparator" type="VSeparator" parent="Inheritance"]
-margin_left = 82.0
-margin_right = 86.0
+margin_left = 198.0
+margin_right = 202.0
 margin_bottom = 14.0
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="Inheritance"]
-margin_left = 90.0
-margin_right = 168.0
+margin_left = 206.0
+margin_right = 400.0
 margin_bottom = 14.0
 size_flags_horizontal = 11
 alignment = 2
 
 [node name="Label2" type="Label" parent="Inheritance/HBoxContainer2"]
-margin_right = 78.0
+margin_right = 194.0
 margin_bottom = 14.0
 size_flags_horizontal = 3
 text = "Inherit to"
 align = 2
 
-[node name="HSeparator" type="HSeparator" parent="."]
-margin_left = 26.0
-margin_top = 50.0
-margin_right = 194.0
-margin_bottom = 53.0
-custom_constants/separation = 3
-
-[node name="Scene" type="HBoxContainer" parent="."]
-modulate = Color( 1, 0.74902, 0.74902, 1 )
-margin_left = 26.0
-margin_top = 54.0
-margin_right = 194.0
-margin_bottom = 68.0
-
-[node name="HBoxContainer" type="HBoxContainer" parent="Scene"]
-margin_right = 83.0
-margin_bottom = 14.0
-size_flags_horizontal = 3
-
-[node name="Label" type="Label" parent="Scene/HBoxContainer"]
-margin_right = 83.0
-margin_bottom = 14.0
-text = "Scene parent"
-
-[node name="VSeparator" type="VSeparator" parent="Scene"]
-margin_left = 87.0
-margin_right = 91.0
-margin_bottom = 14.0
-
-[node name="HBoxContainer2" type="HBoxContainer" parent="Scene"]
-margin_left = 95.0
-margin_right = 168.0
-margin_bottom = 14.0
-size_flags_horizontal = 11
-
-[node name="Label" type="Label" parent="Scene/HBoxContainer2"]
-margin_right = 73.0
-margin_bottom = 14.0
-text = "Scene child"
-align = 2
-
 [node name="HSeparator2" type="HSeparator" parent="."]
 margin_left = 26.0
-margin_top = 69.0
-margin_right = 194.0
-margin_bottom = 73.0
+margin_top = 50.0
+margin_right = 426.0
+margin_bottom = 54.0
+
+[node name="Path" type="VBoxContainer" parent="."]
+margin_left = 26.0
+margin_top = 55.0
+margin_right = 426.0
+margin_bottom = 79.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Path"]
+margin_right = 400.0
+margin_bottom = 24.0
+
+[node name="Label" type="Label" parent="Path/HBoxContainer"]
+margin_top = 5.0
+margin_right = 69.0
+margin_bottom = 19.0
+text = "Save Path: "
+
+[node name="LineEdit" type="LineEdit" parent="Path/HBoxContainer"]
+margin_left = 73.0
+margin_right = 400.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 0, 20 )
+size_flags_horizontal = 3
+
+[node name="HSeparator" type="HSeparator" parent="."]
+margin_left = 26.0
+margin_top = 80.0
+margin_right = 426.0
+margin_bottom = 83.0
+custom_constants/separation = 3
 
 [node name="Methods" type="VBoxContainer" parent="."]
 modulate = Color( 0.937255, 1, 0.635294, 1 )
 margin_left = 26.0
-margin_top = 74.0
-margin_right = 194.0
-margin_bottom = 88.0
+margin_top = 84.0
+margin_right = 426.0
+margin_bottom = 102.0
+size_flags_vertical = 5
 
 [node name="Label" type="Label" parent="Methods"]
-margin_right = 168.0
+margin_right = 400.0
 margin_bottom = 14.0
 text = "Methods:"
 align = 1
 
+[node name="List" type="VBoxContainer" parent="Methods"]
+margin_top = 18.0
+margin_right = 400.0
+margin_bottom = 18.0
+alignment = 1
+
 [node name="HSeparator3" type="HSeparator" parent="."]
 margin_left = 26.0
-margin_top = 89.0
-margin_right = 194.0
-margin_bottom = 93.0
+margin_top = 103.0
+margin_right = 426.0
+margin_bottom = 107.0
 
 [node name="Fields" type="VBoxContainer" parent="."]
 modulate = Color( 0.713726, 1, 0.847059, 1 )
 margin_left = 26.0
-margin_top = 94.0
-margin_right = 194.0
-margin_bottom = 108.0
+margin_top = 108.0
+margin_right = 426.0
+margin_bottom = 126.0
+size_flags_vertical = 5
 
 [node name="Label" type="Label" parent="Fields"]
-margin_right = 168.0
+margin_right = 400.0
 margin_bottom = 14.0
 text = "Fields:"
 align = 1
+
+[node name="List" type="VBoxContainer" parent="Fields"]
+margin_top = 18.0
+margin_right = 400.0
+margin_bottom = 18.0
+size_flags_vertical = 5
+
+[node name="FolderPath" type="FileDialog" parent="."]
+visible = true
+margin_left = 26.0
+margin_top = 127.0
+margin_right = 426.0
+margin_bottom = 527.0
+rect_min_size = Vector2( 400, 400 )
+window_title = "Open a Directory"
+resizable = true
+mode = 2
 [connection signal="close_request" from="." to="." method="_on_ClassNode_close_request"]
 [connection signal="gui_input" from="." to="." method="_on_ClassNode_gui_input"]
+[connection signal="resize_request" from="." to="." method="_on_ClassNode_resize_request"]
+[connection signal="gui_input" from="Path/HBoxContainer/LineEdit" to="." method="_on_LineEdit_gui_input"]
+[connection signal="dir_selected" from="FolderPath" to="." method="_on_FolderPath_dir_selected"]

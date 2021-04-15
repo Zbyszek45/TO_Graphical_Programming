@@ -8,6 +8,7 @@ func _enter_tree():
 	main_panel_object = MainPanel.instance()
 	get_editor_interface().get_editor_viewport().add_child(main_panel_object)
 	make_visible(false)
+	add_autoload_singleton ("Singleton", "res://addons/gp_plugin/my_singleton.gd")
 
 func _exit_tree():
 	if main_panel_object:
