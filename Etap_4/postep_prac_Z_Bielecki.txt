@@ -1,0 +1,43 @@
+CO ZOSTAŁO ZREALIZOWANE:
+- niewielka zmiana struktury węzłów
+- dodanie ściezkę do zapisu
+- dodano możliwość tworzenia funkcji i pól
+
+//================================================================
+
+CO BĘDZIE REALIZOWANE:
+- Dodanie domyślnej ścieżki
+- Zapis projektu do JSON
+- Pierwsze próby generacji kodu
+
+//================================================================
+
+JAKIE SĄ EWENTUALNE PROBLEMY:
+Brak.
+
+//================================================================
+
+STATYSTYKI KODU ŹRÓDŁOWEGO:
+
+Author: Zbigniew Bielecki <80918390+Zbyszek45@users.noreply.github.com>
+Date:   Thu Apr 15 20:27:13 2021 +0200
+
+    Etap 4
+
+ .../addons/gp_plugin/ClassSettings.gd              |  65 +++++++--
+ .../addons/gp_plugin/MainPanel.gd                  |   8 --
+ .../addons/gp_plugin/MainPanel.tscn                | 106 ++++++++++++---
+ .../addons/gp_plugin/main_script.gd                |   1 +
+ .../addons/gp_plugin/my_singleton.gd               |   9 ++
+ .../addons/gp_plugin/scenes/ClassNode.gd           |  64 +++++++--
+ .../addons/gp_plugin/scenes/ClassNode.tscn         | 149 ++++++++++++---------
+ .../addons/gp_plugin/scenes/FieldRow.gd            |  29 ++++
+ .../addons/gp_plugin/scenes/FieldRow.tscn          |  46 +++++++
+ .../addons/gp_plugin/scenes/MethodRow.gd           |  16 +++
+ .../addons/gp_plugin/scenes/MethodRow.tscn         |  28 ++++
+ .../gp_plugin/scenes/node_parts/FieldsNode.gd      |  20 +++
+ .../gp_plugin/scenes/node_parts/FieldsNode.tscn    |  34 +++++
+ .../gp_plugin/scenes/node_parts/MethodsNode.gd     |  14 ++
+ .../gp_plugin/scenes/node_parts/MethodsNode.tscn   |  19 +++
+ graficzne_programowanie_test/project.godot         |   4 +
+ 16 files changed, 499 insertions(+), 113 deletions(-)
