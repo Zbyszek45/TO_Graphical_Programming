@@ -27,6 +27,7 @@ func set_graph_node(node):
 		child.queue_free()
 	
 	for field in graphNode.get_fields():
+		print(field.get_modifier(), field.get_type(), field.get_name())
 		field_list.add_child(field)
 	
 	for method in graphNode.get_methods():
@@ -39,7 +40,7 @@ func _on_ClassSettings_about_to_show():
 
 func _on_ClassSettings_popup_hide():
 	
-	graphNode.update_fields(transform())
+	graphNode.update_fields(get_field_list())
 	graphNode.update_methods(get_method_list())
 	graphNode = null
 
@@ -53,13 +54,12 @@ func _on_add_field_button_pressed():
 	var new_field = fieldScene.instance()
 	field_list.add_child(new_field)
 
-func transform():
+func get_field_list():
 	var list = []
 	for child in field_list.get_children():
 		var new = fieldNodeScene.instance()
 		new.set_row(child.get_modifier(), child.get_type(), child.get_name())
 		list.append(new)
-	
 	return list
 
 func _on_method_AddButton_pressed():

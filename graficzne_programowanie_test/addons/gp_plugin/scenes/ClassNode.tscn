@@ -190,7 +190,6 @@ margin_bottom = 18.0
 size_flags_vertical = 5
 
 [node name="FolderPath" type="FileDialog" parent="."]
-visible = true
 margin_left = 26.0
 margin_top = 127.0
 margin_right = 426.0

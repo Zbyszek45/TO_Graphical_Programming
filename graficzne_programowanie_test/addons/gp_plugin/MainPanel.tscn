@@ -224,6 +224,7 @@ margin_top = 22.0
 margin_right = 272.0
 margin_bottom = 42.0
 text = "Add"
+
 [connection signal="connection_request" from="MarginContainer/VBoxContainer/HSplitContainer/Graph" to="MarginContainer/VBoxContainer/HSplitContainer/Graph" method="_on_Graph_connection_request"]
 [connection signal="disconnection_request" from="MarginContainer/VBoxContainer/HSplitContainer/Graph" to="MarginContainer/VBoxContainer/HSplitContainer/Graph" method="_on_Graph_disconnection_request"]
 [connection signal="node_changed" from="MarginContainer/VBoxContainer/HSplitContainer/Graph" to="." method="_on_Graph_node_changed"]
