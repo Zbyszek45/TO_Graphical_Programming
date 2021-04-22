@@ -16,9 +16,6 @@ JAKIE SĄ EWENTUALNE PROBLEMY:
 
 STATYSTYKI KODU ŹRÓDŁOWEGO:
 
-Author: Zbigniew Bielecki <80918390+Zbyszek45@users.noreply.github.com>
-Date:   Thu Apr 15 20:27:13 2021 +0200
-
  .../addons/gp_plugin/ClassSettings.gd              |    6 +-
  .../addons/gp_plugin/MainPanel.tscn                |    1 +
  .../addons/gp_plugin/my_singleton.gd               |    9 +
