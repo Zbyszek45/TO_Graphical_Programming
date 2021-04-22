@@ -1,0 +1,32 @@
+CO ZOSTAŁO ZREALIZOWANE:
+- poprawka błędów i ogólna refaktoryzacja kodu
+- schemat procesu blokowego algorytmu konwersji
+
+//================================================================
+
+CO BĘDZIE REALIZOWANE:
+- Pierwsze kroki w generowaniu plików i ich kompilacja
+
+//================================================================
+
+JAKIE SĄ EWENTUALNE PROBLEMY:
+- Pozycja węzła posiada dziwne zachowanie w nowej wersji silnika
+
+//================================================================
+
+STATYSTYKI KODU ŹRÓDŁOWEGO:
+
+Author: Zbigniew Bielecki <80918390+Zbyszek45@users.noreply.github.com>
+Date:   Thu Apr 15 20:27:13 2021 +0200
+
+ .../addons/gp_plugin/ClassSettings.gd              |    6 +-
+ .../addons/gp_plugin/MainPanel.tscn                |    1 +
+ .../addons/gp_plugin/my_singleton.gd               |    9 +
+ .../addons/gp_plugin/scenes/ClassNode.tscn         |    1 -
+ .../addons/gp_plugin/scenes/FieldRow.gd            |   19 +-
+ .../addons/gp_plugin/scenes/FieldRow.tscn          |   22 +-
+ graficzne_programowanie_test/project.godot         |    1 -
+ materialy/schemat_konwersji.odt                    |  Bin 0 -> 81248 bytes
+
+Wygenerowane zostały odpowiednie składniki potrzebne od obsługi C# (ponad 1k linii kodu)
+dlatego pokazane tutaj są statystyki tylko edytowanych plików.
