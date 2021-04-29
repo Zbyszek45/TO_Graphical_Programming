@@ -1,0 +1,35 @@
+CO ZOSTAŁO ZREALIZOWANE:
+- poprawka w edytorze
+- generacja C# i GDScript
+
+//================================================================
+
+CO BĘDZIE REALIZOWANE:
+- Wypełnienie dokumentacji
+
+//================================================================
+
+JAKIE SĄ EWENTUALNE PROBLEMY:
+- Brak
+
+//================================================================
+
+STATYSTYKI KODU ŹRÓDŁOWEGO:
+
+    etap_6
+
+ .gitignore                                         | 30 +++++++++++
+ graficzne_programowanie_test/Test_2D_Scene.gd      | 18 +++----
+ graficzne_programowanie_test/Test_2D_Scene.tscn    |  5 +-
+ .../addons/gp_plugin/Graph.gd                      | 32 ++++++++++--
+ .../addons/gp_plugin/MainPanel.tscn                | 23 ++++++++-
+ .../addons/gp_plugin/my_singleton.gd               | 60 +++++++++++++++++++++-
+ .../addons/gp_plugin/scenes/ClassNode.gd           | 22 ++++++++
+ .../addons/gp_plugin/scenes/ClassNode.tscn         |  5 +-
+ .../addons/gp_plugin/scenes/FieldRow.tscn          | 11 ++--
+ graficzne_programowanie_test/project.godot         |  5 +-
+ 10 files changed, 184 insertions(+), 27 deletions(-)
+
+commit 4f82a06a149371e971d865a4af13e3e33fe9cf2d
+Author: Zbigniew Bielecki <80918390+Zbyszek45@users.noreply.github.com>
+Date:   Thu Apr 22 14:07:04 2021 +0200
