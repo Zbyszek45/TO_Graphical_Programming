@@ -8,13 +8,10 @@
 
 config_version=4
 
-_global_script_classes=[  ]
-_global_script_class_icons={
-}
-
 [application]
 
 config/name="Graficzne Programowanie Test"
+run/main_scene="res://Test_2D_Scene.tscn"
 config/icon="res://icon.png"
 
 [autoload]

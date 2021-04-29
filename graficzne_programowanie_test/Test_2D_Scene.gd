@@ -1,16 +1,12 @@
 extends Node2D
 
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	do_something()
 
+func do_something():
+	var my_cat = load("res://bla/Pies.cs")
+	var c = my_cat.new()
+	print(c.krzycz())
+	return
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func sm(): return

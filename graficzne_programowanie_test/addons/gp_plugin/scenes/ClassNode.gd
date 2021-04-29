@@ -16,6 +16,28 @@ func _ready():
 	fields = $Fields/List
 	methods = $Methods/List
 
+func get_path():
+	return $Path/HBoxContainer/LineEdit.text
+
+func get_fields_list():
+	var list = []
+	for child in fields.get_children():
+		var d = {}
+		d["name"] = child.get_name()
+		d["type"] = child.get_type()
+		d["modifier"] = child.get_modifier()
+		list.append(d)
+	
+	return list
+
+func get_methods_list():
+	var list = []
+	for child in methods.get_children():
+		var d = {}
+		d["name"] = child.get_name()
+		list.append(d)
+	
+	return list
 
 func _on_ClassNode_close_request():
 	self.queue_free()

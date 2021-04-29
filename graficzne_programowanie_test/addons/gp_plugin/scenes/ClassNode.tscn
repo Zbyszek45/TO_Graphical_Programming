@@ -4,7 +4,9 @@
 [ext_resource path="res://addons/gp_plugin/assets/class_node_header_selected.tres" type="StyleBox" id=2]
 [ext_resource path="res://addons/gp_plugin/assets/class_node_header.tres" type="StyleBox" id=3]
 
-[node name="ClassNode" type="GraphNode"]
+[node name="ClassNode" type="GraphNode" groups=[
+"graphnode",
+]]
 margin_right = 201.0
 margin_bottom = 93.0
 size_flags_vertical = 5
@@ -198,6 +200,7 @@ rect_min_size = Vector2( 400, 400 )
 window_title = "Open a Directory"
 resizable = true
 mode = 2
+
 [connection signal="close_request" from="." to="." method="_on_ClassNode_close_request"]
 [connection signal="gui_input" from="." to="." method="_on_ClassNode_gui_input"]
 [connection signal="resize_request" from="." to="." method="_on_ClassNode_resize_request"]

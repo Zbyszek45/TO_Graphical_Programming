@@ -79,8 +79,27 @@ margin_bottom = 572.0
 right_disconnects = true
 script = ExtResource( 2 )
 
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer/HSplitContainer/Graph"]
+margin_left = 269.052
+margin_top = 12.4726
+margin_right = 340.052
+margin_bottom = 32.4726
+text = "Generate gd"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" type="Button" parent="MarginContainer/VBoxContainer/HSplitContainer/Graph"]
+margin_left = 380.414
+margin_top = 12.4726
+margin_right = 469.414
+margin_bottom = 32.4726
+text = "Generate cs"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="ClassSettings" type="WindowDialog" parent="."]
-visible = true
 margin_right = 48.0
 margin_bottom = 40.0
 rect_min_size = Vector2( 300, 300 )
@@ -228,6 +247,8 @@ text = "Add"
 [connection signal="connection_request" from="MarginContainer/VBoxContainer/HSplitContainer/Graph" to="MarginContainer/VBoxContainer/HSplitContainer/Graph" method="_on_Graph_connection_request"]
 [connection signal="disconnection_request" from="MarginContainer/VBoxContainer/HSplitContainer/Graph" to="MarginContainer/VBoxContainer/HSplitContainer/Graph" method="_on_Graph_disconnection_request"]
 [connection signal="node_changed" from="MarginContainer/VBoxContainer/HSplitContainer/Graph" to="." method="_on_Graph_node_changed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HSplitContainer/Graph/Button" to="MarginContainer/VBoxContainer/HSplitContainer/Graph" method="_on_Button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HSplitContainer/Graph/Button2" to="MarginContainer/VBoxContainer/HSplitContainer/Graph" method="_on_Button2_pressed"]
 [connection signal="about_to_show" from="ClassSettings" to="ClassSettings" method="_on_ClassSettings_about_to_show"]
 [connection signal="popup_hide" from="ClassSettings" to="ClassSettings" method="_on_ClassSettings_popup_hide"]
 [connection signal="focus_exited" from="ClassSettings/MarginC/TabContainer/Basic/ClassName/Label" to="ClassSettings" method="_on_Label_focus_exited"]
