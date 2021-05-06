@@ -62,11 +62,7 @@ func generateGD(list):
 		file.store_string("\n")
 		for method in node["methods"]:
 			file.store_string("func " + method["name"] + "(): return\n\n")
-		print(node["name"])
-		print(node["parent"])
-		print(node["path"])
-		print(node["fields"])
-		print(node["methods"])
+
 	
 
 
