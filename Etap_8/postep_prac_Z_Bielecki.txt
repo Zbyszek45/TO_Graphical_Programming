@@ -1,0 +1,35 @@
+CO ZOSTAŁO ZREALIZOWANE:
+- Wzór do tworzenia agregacji, części opisu funkcjonalności w dokumentacji
+
+//================================================================
+
+CO BĘDZIE REALIZOWANE:
+- Dokończenie agregacji i dalsza praca nad dokumentacją
+
+//================================================================
+
+JAKIE SĄ EWENTUALNE PROBLEMY:
+- Brak
+
+//================================================================
+
+STATYSTYKI KODU ŹRÓDŁOWEGO:
+
+Author: Zbigniew Bielecki <80918390+Zbyszek45@users.noreply.github.com>
+Date:   Thu May 13 17:09:58 2021 +0200
+
+    etap 8
+
+ graficzne_programowanie_test/Figura.gd             |   8 --
+ graficzne_programowanie_test/Kolo.gd               |   6 --
+ .../addons/gp_plugin/scenes/ClassNode.gd           |   1 +
+ .../addons/gp_plugin/scenes/ClassNode.tscn         |  92 +++++++++++++++++----
+ graficzne_programowanie_test/bla/Pies.cs           |   6 --
+ graficzne_programowanie_test/bla/Zwierze.cs        |  12 ---
+ graficzne_programowanie_test/figury/Figura.cs      |  21 -----
+ graficzne_programowanie_test/figury/Kolo.cs        |   9 --
+ graficzne_programowanie_test/figury/Kwadrat.cs     |   6 --
+ graficzne_programowanie_test/figury/Prostokat.cs   |   8 --
+ graficzne_programowanie_test/project.godot         |  16 ----
+ materialy/TO_dokumentacja_21A_ZB.odt               | Bin 386930 -> 387706 bytes
+ 12 files changed, 77 insertions(+), 108 deletions(-)
