@@ -8,22 +8,6 @@
 
 config_version=4
 
-_global_script_classes=[ {
-"base": "Node",
-"class": "Figura",
-"language": "GDScript",
-"path": "res://Figura.gd"
-}, {
-"base": "Figura",
-"class": "Kolo",
-"language": "GDScript",
-"path": "res://Kolo.gd"
-} ]
-_global_script_class_icons={
-"Figura": "",
-"Kolo": ""
-}
-
 [application]
 
 config/name="Graficzne Programowanie Test"

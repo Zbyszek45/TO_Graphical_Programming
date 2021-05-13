@@ -12,6 +12,7 @@ var methodsScene = preload("res://addons/gp_plugin/scenes/node_parts/MethodsNode
 
 func _ready():
 	self.set_slot(0, true, 0, Color.blue, true, 0, Color.blue)
+	#self.set_slot(1, true, 1, Color.red, true, 1, Color.red)
 	
 	fields = $Fields/List
 	methods = $Methods/List
