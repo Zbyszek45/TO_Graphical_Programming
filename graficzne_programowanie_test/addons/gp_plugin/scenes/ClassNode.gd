@@ -11,8 +11,12 @@ var methodsRow = preload("res://addons/gp_plugin/scenes/MethodRow.tscn")
 var methodsScene = preload("res://addons/gp_plugin/scenes/node_parts/MethodsNode.tscn")
 
 func _ready():
-	self.set_slot(0, true, 0, Color.blue, true, 0, Color.blue)
-	#self.set_slot(1, true, 1, Color.red, true, 1, Color.red)
+	self.set_slot(0, true, 0, Color.blue, true, 0, Color.blue,
+	load("res://addons/gp_plugin/scenes/node_parts/blue_dot.png"),
+	load("res://addons/gp_plugin/scenes/node_parts/blue_inh.png"))
+	self.set_slot(1, true, 1, Color.red, true, 1, Color.red,
+	load("res://addons/gp_plugin/scenes/node_parts/red_aggr.png"),
+	load("res://addons/gp_plugin/scenes/node_parts/red_dot.png"))
 	
 	fields = $Fields/List
 	methods = $Methods/List
@@ -87,8 +91,8 @@ func _on_ClassNode_resize_request(new_minsize):
 
 func _on_LineEdit_gui_input(event):
 	if event is InputEventMouseButton and event.is_pressed():
-		$FolderPath.show()
+		$Path/FolderPath.show()
 		
 
 func _on_FolderPath_dir_selected(dir):
-	$Path/HBoxContainer/LineEdit.text = $FolderPath.current_dir
+	$Path/HBoxContainer/LineEdit.text = $Path/FolderPath.current_dir
