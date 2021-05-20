@@ -1,0 +1,47 @@
+CO ZOSTAŁO ZREALIZOWANE:
+- Naprawa paru wizualnych bugów, bardziej intuicyjne węzły do użytku, dokumentacja
+
+//================================================================
+
+CO BĘDZIE REALIZOWANE:
+- Dalsza praca nad dokumentacją i agregacją
+
+//================================================================
+
+JAKIE SĄ EWENTUALNE PROBLEMY:
+- Brak
+
+//================================================================
+
+STATYSTYKI KODU ŹRÓDŁOWEGO:
+
+Author: Zbigniew Bielecki <80918390+Zbyszek45@users.noreply.github.com>
+Date:   Thu May 20 20:53:44 2021 +0200
+
+    Etap 9
+
+ ...ue_dot.png-3a4c0f81df538e647f0920f9265bac03.md5 |   3 +
+ ...e_dot.png-3a4c0f81df538e647f0920f9265bac03.stex | Bin 0 -> 286 bytes
+ ...ue_inh.png-2017bb55ce4c8b5bcec1d1cd523849c7.md5 |   3 +
+ ...e_inh.png-2017bb55ce4c8b5bcec1d1cd523849c7.stex | Bin 0 -> 277 bytes
+ ...itance.png-535af8f67cc588885fce6acfb2b0360e.md5 |   3 +
+ ...tance.png-535af8f67cc588885fce6acfb2b0360e.stex | Bin 0 -> 136 bytes
+ ...d_aggr.png-06cdd5d1cd7b5ed9aca7764886d88e5b.md5 |   3 +
+ ..._aggr.png-06cdd5d1cd7b5ed9aca7764886d88e5b.stex | Bin 0 -> 220 bytes
+ ...ed_dot.png-a4665a5ff3e714acf50c3a72d8a138ab.md5 |   3 +
+ ...d_dot.png-a4665a5ff3e714acf50c3a72d8a138ab.stex | Bin 0 -> 308 bytes
+ graficzne_programowanie_test/Class.cs              |   6 +
+ .../addons/gp_plugin/scenes/ClassNode.gd           |  12 +-
+ .../addons/gp_plugin/scenes/ClassNode.tscn         | 183 +++++++--------------
+ .../gp_plugin/scenes/node_parts/blue_dot.png       | Bin 0 -> 275 bytes
+ .../scenes/node_parts/blue_dot.png.import          |  34 ++++
+ .../gp_plugin/scenes/node_parts/blue_inh.png       | Bin 0 -> 266 bytes
+ .../scenes/node_parts/blue_inh.png.import          |  34 ++++
+ .../scenes/node_parts/blue_inheritance.png         | Bin 0 -> 123 bytes
+ .../scenes/node_parts/blue_inheritance.png.import  |  34 ++++
+ .../gp_plugin/scenes/node_parts/red_aggr.png       | Bin 0 -> 193 bytes
+ .../scenes/node_parts/red_aggr.png.import          |  34 ++++
+ .../addons/gp_plugin/scenes/node_parts/red_dot.png | Bin 0 -> 285 bytes
+ .../gp_plugin/scenes/node_parts/red_dot.png.import |  34 ++++
+ materialy/TO_dokumentacja_21A_ZB.odt               | Bin 387706 -> 388880 bytes
+ 24 files changed, 260 insertions(+), 126 deletions(-)
