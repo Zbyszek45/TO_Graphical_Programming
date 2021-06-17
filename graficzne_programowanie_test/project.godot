@@ -8,6 +8,22 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Node",
+"class": "Imie",
+"language": "GDScript",
+"path": "res://Imie.gd"
+}, {
+"base": "Node",
+"class": "Kot",
+"language": "GDScript",
+"path": "res://Kot.gd"
+} ]
+_global_script_class_icons={
+"Imie": "",
+"Kot": ""
+}
+
 [application]
 
 config/name="Graficzne Programowanie Test"

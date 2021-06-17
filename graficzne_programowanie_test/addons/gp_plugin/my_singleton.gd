@@ -29,6 +29,10 @@ func generateCS(list):
 		
 		file.store_string("using Godot;\nusing System;\n\n")
 		file.store_string("public class "+ node["name"] + " : " + node["parent"] + "{\n")
+		
+		for obj in node["agr"]:
+			file.store_string("private " + obj["name"] + " " + obj["name"].to_lower() + ";\n")
+		
 		for field in node["fields"]:
 			if (field["modifier"] != "none") and (field["modifier"] != "onready"):
 				file.store_string("[Export]\n")
@@ -51,6 +55,10 @@ func generateGD(list):
 			pfile = node["path"] + "/"
 		file.open(pfile + node["name"] + ".gd", File.WRITE)
 		file.store_string("extends " + node["parent"] + "\n\n")
+		
+		for obj in node["agr"]:
+			file.store_string("var " + obj["name"].to_lower() + " : " + obj["name"] + "\n")
+		
 		file.store_string("class_name " + node["name"] + "\n\n")
 		for field in node["fields"]:
 			if (field["modifier"] != "none"):
@@ -59,11 +67,11 @@ func generateGD(list):
 				file.store_string("var " + field["name"] + ": " + field["type"] + "\n")
 			else:
 				file.store_string("var " + field["name"] + "\n")
+		
 		file.store_string("\n")
 		for method in node["methods"]:
 			file.store_string("func " + method["name"] + "(): return\n\n")
 
-	
 
 
 #	var file := File.new()

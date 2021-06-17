@@ -49,8 +49,16 @@ func get_list():
 		
 		var parent: String = "Node"
 		for p in conn_list:
-			if get_node(p["to"]) == x:
+			if p["from_port"] == 0 and get_node(p["to"]) == x:
 				parent = get_node(p["from"]).title
+		
+		var aggr : Array
+		for p in conn_list:
+			var a = {}
+			if p["from_port"] == 1 and get_node(p["to"]) == x:
+				a["name"] = get_node(p["from"]).title
+				aggr.append(a)
+		d["agr"] = aggr
 		d["parent"] = parent
 		
 		d["path"] = x.get_path()
