@@ -1,0 +1,38 @@
+CO ZOSTAŁO ZREALIZOWANE:
+- Dodano agregacje
+
+//================================================================
+
+CO BĘDZIE REALIZOWANE:
+- Utworzenie dokumentacji
+
+//================================================================
+
+JAKIE SĄ EWENTUALNE PROBLEMY:
+- Brak
+
+//================================================================
+
+STATYSTYKI KODU ŹRÓDŁOWEGO:
+
+Author: Zbigniew Bielecki <80918390+Zbyszek45@users.noreply.github.com>
+Date:   Thu Jun 17 21:19:38 2021 +0200
+
+    Agregacja dodana w pełni
+
+ graficzne_programowanie_test/{Class.cs => Imie.cs}  |  2 +-
+ graficzne_programowanie_test/Imie.gd                |  5 +++++
+ graficzne_programowanie_test/Kot.cs                 |  7 +++++++
+ graficzne_programowanie_test/Kot.gd                 |  6 ++++++
+ graficzne_programowanie_test/Test_2D_Scene.gd       |  9 ++++++---
+ .../addons/gp_plugin/Graph.gd                       | 10 +++++++++-
+ .../addons/gp_plugin/my_singleton.gd                | 10 +++++++++-
+ graficzne_programowanie_test/project.godot          | 16 ++++++++++++++++
+ graficzne_programowanie_test/test1.cs               | 21 +++++++++++++++++++++
+ graficzne_programowanie_test/test2.cs               | 21 +++++++++++++++++++++
+ 10 files changed, 101 insertions(+), 6 deletions(-)
+
+commit 0a7152e58e99aa866b50f36849724b1c93a64abe
+Author: Zbigniew Bielecki <80918390+Zbyszek45@users.noreply.github.com>
+Date:   Fri May 28 01:14:02 2021 +0200
+
