@@ -11,7 +11,7 @@ margin_top = 269.0
 margin_right = 414.0
 margin_bottom = 283.0
 rect_scale = Vector2( 4.14815, 5.93333 )
-text = "SOMETHING"
+text = "BRAK ERROROW"
 __meta__ = {
 "_edit_use_anchors_": false
 }

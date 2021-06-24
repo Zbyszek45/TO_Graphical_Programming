@@ -10,18 +10,30 @@ config_version=4
 
 _global_script_classes=[ {
 "base": "Node",
-"class": "Imie",
+"class": "Indeks",
 "language": "GDScript",
-"path": "res://Imie.gd"
+"path": "res://uczelnia/Indeks.gd"
 }, {
 "base": "Node",
-"class": "Kot",
+"class": "Konto",
 "language": "GDScript",
-"path": "res://Kot.gd"
+"path": "res://uczelnia/Konto.gd"
+}, {
+"base": "Node",
+"class": "Osoba",
+"language": "GDScript",
+"path": "res://uczelnia/Osoba.gd"
+}, {
+"base": "Osoba",
+"class": "Student",
+"language": "GDScript",
+"path": "res://uczelnia/Student.gd"
 } ]
 _global_script_class_icons={
-"Imie": "",
-"Kot": ""
+"Indeks": "",
+"Konto": "",
+"Osoba": "",
+"Student": ""
 }
 
 [application]

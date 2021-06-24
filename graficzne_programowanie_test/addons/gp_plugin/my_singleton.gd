@@ -56,8 +56,6 @@ func generateGD(list):
 		file.open(pfile + node["name"] + ".gd", File.WRITE)
 		file.store_string("extends " + node["parent"] + "\n\n")
 		
-		for obj in node["agr"]:
-			file.store_string("var " + obj["name"].to_lower() + " : " + obj["name"] + "\n")
 		
 		file.store_string("class_name " + node["name"] + "\n\n")
 		for field in node["fields"]:
@@ -67,6 +65,9 @@ func generateGD(list):
 				file.store_string("var " + field["name"] + ": " + field["type"] + "\n")
 			else:
 				file.store_string("var " + field["name"] + "\n")
+		
+		for obj in node["agr"]:
+			file.store_string("var " + obj["name"].to_lower() + " : " + obj["name"] + "\n")
 		
 		file.store_string("\n")
 		for method in node["methods"]:

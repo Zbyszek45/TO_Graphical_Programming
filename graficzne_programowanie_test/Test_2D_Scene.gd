@@ -6,9 +6,11 @@ func _ready():
 func do_something():
 	
 	
+#	var student_class = load("res://uczelnia/Student.cs")
+#	var s = student_class.new()
 	
-#	var kwadrat_class = load("res://figury/Kwadrat.cs")
-#	var kwadrat = kwadrat_class.new()
-#	$Label.text = kwadrat.get_pole()
-	return
+	var s = Student.new()
+	$Label.text = s.zyj()
+	
 
+	return
