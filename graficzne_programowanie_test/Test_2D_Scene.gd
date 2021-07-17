@@ -8,9 +8,9 @@ func do_something():
 	
 #	var student_class = load("res://uczelnia/Student.cs")
 #	var s = student_class.new()
-	
+#
 	var s = Student.new()
-	$Label.text = s.zyj()
+	$Label.text = s.get_dane()
 	
 
 	return

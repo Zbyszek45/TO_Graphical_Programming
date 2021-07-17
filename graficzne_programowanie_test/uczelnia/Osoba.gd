@@ -4,5 +4,5 @@ class_name Osoba
 
 var imie: String
 
-func zyj(): return "Jestem osoba"
+func get_dane(): return "jestem osoba"
 
